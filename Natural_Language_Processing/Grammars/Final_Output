@@ -1,0 +1,686 @@
+0:s --> np,vp
+1:s --> np
+2:np --> pronoun
+3:np --> properNoun
+4:np --> np1
+5:np --> np2
+6:np --> np3
+7:np --> np4
+8:np --> np5
+9:np --> np6
+10:np --> np7
+11:np --> np8
+12:np --> np9
+13:np --> np10
+14:np --> np11
+15:np --> np12
+16:np --> np13
+17:np --> np14
+18:np --> np15
+19:np --> np16
+20:np1 --> indefSngMascDet,n0SngMasc
+21:np2 --> indefSngFemDet,n0SngFem
+22:np3 --> indefPlDet,n0PlMasc
+23:np4 --> indefPlDet,n0PlFem
+24:np5 --> defSngMascDet,n0SngMasc
+25:np6 --> defSngFemDet,n0SngFem
+26:np7 --> defPlDet,n0PlMasc
+27:np8 --> defPlDet,n0PlFem
+28:np9 --> n0SngMasc
+29:np10 --> n0SngFem
+30:np11 --> n0PlMasc
+31:np12 --> n0PlFem
+32:np13 --> n0SngMasc
+33:np14 --> n0SngFem
+34:np15 --> n0PlMasc
+35:np16 --> n0PlFem
+36:n0SngMasc --> n1SngMasc
+37:n0SngMasc --> SngMascPrecedingAdj,n0SngMasc
+38:n1SngMasc --> SngMascLexN,pp
+39:n1SngMasc --> SngMascLexN
+40:n1SngMasc --> SngMascLexN,n2SngMasc
+41:n2SngMasc --> SngMascSucceedingAdj,pp
+42:n2SngMasc --> SngMascSucceedingAdj
+43:n2SngMasc --> SngMascSucceedingAdj,n2SngMasc
+44:n2SngMasc --> subjectRel
+45:n2SngMasc --> objectRel
+46:n0SngFem --> n1SngFem
+47:n0SngFem --> SngFemPrecedingAdj,n0SngFem
+48:n1SngFem --> SngFemLexN,pp
+49:n1SngFem --> SngFemLexN
+50:n1SngFem --> SngFemLexN,n2SngFem
+51:n2SngFem --> SngFemSucceedingAdj,pp
+52:n2SngFem --> SngFemSucceedingAdj
+53:n2SngFem --> SngFemSucceedingAdj,n2SngFem
+54:n2SngFem --> subjectRel
+55:n2SngFem --> objectRel
+56:n0PlMasc --> n1PlMasc
+57:n0PlMasc --> PlMascPrecedingAdj,n0PlMasc
+58:n1PlMasc --> PlMascLexN,pp
+59:n1PlMasc --> PlMascLexN
+60:n1PlMasc --> PlMascLexN,n2PlMasc
+61:n2PlMasc --> PlMascSucceedingAdj,pp
+62:n2PlMasc --> PlMascSucceedingAdj
+63:n2PlMasc --> PlMascSucceedingAdj,n2PlMasc
+64:n2PlMasc --> subjectRel
+65:n2PlMasc --> objectRel
+66:n0PlFem --> n1PlFem
+67:n0PlFem --> PlFemPrecedingAdj,n0PlFem
+68:n1PlFem --> PlFemLexN,pp
+69:n1PlFem --> PlFemLexN
+70:n1PlFem --> PlFemLexN,n2PlFem
+71:n2PlFem --> PlFemSucceedingAdj,pp
+72:n2PlFem --> PlFemSucceedingAdj
+73:n2PlFem --> PlFemSucceedingAdj,n2PlFem
+74:n2PlFem --> subjectRel
+75:n2PlFem --> objectRel
+76:pp --> indefSngMascPartitive&Det,np9
+77:pp --> indefSngFemPartitive&Det,np10
+78:pp --> indefPlPartitive&Det,np11
+79:pp --> indefPlPartitive&Det,np12
+80:pp --> defSngMascPartitive&Det,np13
+81:pp --> defSngFemPartitive&Det,np14
+82:pp --> defPlPartitive&Det,np15
+83:pp --> defPlPartitive&Det,np16
+84:subjectRel --> [qui],vp
+85:objectRel --> [que],np,vTransitiveAvoir
+86:objectRel --> [que],np,vTransitiveEtre
+87:indefSngMascDet --> [un]
+88:indefSngFemDet --> [une]
+89:indefPlDet --> [des]
+90:defSngMascDet --> [le]
+91:defSngFemDet --> [la]
+92:defPlDet --> [les]
+93:indefSngMascPartitive&Det --> [d'un]
+94:indefSngFemPartitive&Det --> [d'une]
+95:indefPlPartitive&Det --> [des]
+96:defSngMascPartitive&Det --> [du]
+97:defSngFemPartitive&Det --> [de],defSngFemDet
+98:defPlPartitive&Det --> [de],defPlDet
+99:pronoun --> [je]
+100:pronoun --> [tu]
+101:pronoun --> [il]
+102:pronoun --> [elle]
+103:pronoun --> [on]
+104:pronoun --> [nous]
+105:pronoun --> [vous]
+106:pronoun --> [ils]
+107:pronoun --> [elles]
+108:properNoun --> [Amélie]
+109:properNoun --> [Bernard]
+110:properNoun --> [Camille]
+111:SngMascPrecedingAdj --> [bon]
+112:SngMascPrecedingAdj --> [beau]
+113:SngMascPrecedingAdj --> [joli]
+114:SngMascPrecedingAdj --> [grand]
+115:SngFemPrecedingAdj --> [bonne]
+116:SngFemPrecedingAdj --> [belle]
+117:SngFemPrecedingAdj --> [jolie]
+118:SngFemPrecedingAdj --> [grande]
+119:PlMascPrecedingAdj --> [bons]
+120:PlMascPrecedingAdj --> [beaux]
+121:PlMascPrecedingAdj --> [jolis]
+122:PlMascPrecedingAdj --> [grands]
+123:PlFemPrecedingAdj --> [bonnes]
+124:PlFemPrecedingAdj --> [belles]
+125:PlFemPrecedingAdj --> [jolies]
+126:PlFemPrecedingAdj --> [grandes]
+127:PlFemPrecedingAdj --> [trois]
+128:SngMascSucceedingAdj --> [fantastique]
+129:SngMascSucceedingAdj --> [incroyable]
+130:SngMascSucceedingAdj --> [intéressant]
+131:SngFemSucceedingAdj --> [fantastique]
+132:SngFemSucceedingAdj --> [incroyable]
+133:SngFemSucceedingAdj --> [intéressante]
+134:PlMascSucceedingAdj --> [fantastiques]
+135:PlMascSucceedingAdj --> [incroyables]
+136:PlMascSucceedingAdj --> [intéressants]
+137:PlFemSucceedingAdj --> [fantastiques]
+138:PlFemSucceedingAdj --> [incroyables]
+139:PlFemSucceedingAdj --> [intéressantes]
+140:SngMascLexN --> [chien]
+141:SngMascLexN --> [truc]
+142:SngMascLexN --> [bâtiment]
+143:SngFemLexN --> [chienne]
+144:SngFemLexN --> [personne]
+145:SngFemLexN --> [maison]
+146:PlMascLexN --> [chiens]
+147:PlMascLexN --> [trucs]
+148:PlMascLexN --> [bâtiments]
+149:PlFemLexN --> [chiennes]
+150:PlFemLexN --> [personnes]
+151:PlFemLexN --> [maisons]
+152:vp --> vTransitiveAvoir,np
+153:vp --> vTransitiveEtre,np
+154:vp --> vIntransitiveAvoir
+155:vp --> vIntransitiveEtre
+156:vTransitiveAvoir --> avoirAux,transitiveAvoirPastParticiple
+157:vTransitiveEtre --> etreAux,transitiveEtrePastParticiple
+158:vIntransitiveAvoir --> avoirAux,intransitiveAvoirPastParticiple
+159:vIntransitiveEtre --> etreAux,intransitiveEtrePastParticiple
+160:avoirAux --> [ai]
+161:avoirAux --> [as]
+162:avoirAux --> [a]
+163:avoirAux --> [avons]
+164:avoirAux --> [avez]
+165:avoirAux --> [ont]
+166:etreAux --> [suis]
+167:etreAux --> [es]
+168:etreAux --> [est]
+169:etreAux --> [sommes]
+170:etreAux --> [êtes]
+171:etreAux --> [sont]
+172:transitiveAvoirPastParticiple --> [embrassé]
+173:transitiveAvoirPastParticiple --> [vu]
+174:transitiveAvoirPastParticiple --> [volé]
+175:transitiveEtrePastParticiple --> [sorti]
+176:intransitiveAvoirPastParticiple --> [mangé]
+177:intransitiveEtrePastParticiple --> [descendu]
+initial is s
+*************************************
+pos test 0 Amélie a embrassé Bernard
+s
+|___np
+|   |___properNoun
+|       |___[Amélie]
+|   
+|___vp
+    |___vTransitiveAvoir
+    |   |___avoirAux
+    |   |   |___[a]
+    |   |   
+    |   |___transitiveAvoirPastParticiple
+    |       |___[embrassé]
+    |   
+    |___np
+        |___properNoun
+            |___[Bernard]
+YEP pos
+*************************************
+pos test 1 trois personnes ont embrassé Bernard
+s
+|___np
+|   |___np12
+|       |___n0PlFem
+|           |___PlFemPrecedingAdj
+|           |   |___[trois]
+|           |   
+|           |___n0PlFem
+|               |___n1PlFem
+|                   |___PlFemLexN
+|                       |___[personnes]
+|   
+|___vp
+    |___vTransitiveAvoir
+    |   |___avoirAux
+    |   |   |___[ont]
+    |   |   
+    |   |___transitiveAvoirPastParticiple
+    |       |___[embrassé]
+    |   
+    |___np
+        |___properNoun
+            |___[Bernard]
+YEP pos
+*************************************
+pos test 2 la personne qui a embrassé Bernard a vu Camille
+s
+|___np
+|   |___np6
+|       |___defSngFemDet
+|       |   |___[la]
+|       |   
+|       |___n0SngFem
+|           |___n1SngFem
+|               |___SngFemLexN
+|               |   |___[personne]
+|               |   
+|               |___n2SngFem
+|                   |___subjectRel
+|                       |___[qui]
+|                       |   
+|                       |___vp
+|                           |___vTransitiveAvoir
+|                           |   |___avoirAux
+|                           |   |   |___[a]
+|                           |   |   
+|                           |   |___transitiveAvoirPastParticiple
+|                           |       |___[embrassé]
+|                           |   
+|                           |___np
+|                               |___properNoun
+|                                   |___[Bernard]
+|   
+|___vp
+    |___vTransitiveAvoir
+    |   |___avoirAux
+    |   |   |___[a]
+    |   |   
+    |   |___transitiveAvoirPastParticiple
+    |       |___[vu]
+    |   
+    |___np
+        |___properNoun
+            |___[Camille]
+YEP pos
+*************************************
+neg test 3 la personne qui a Bernard embrassé a vu Camille
+YEP neg
+*************************************
+pos test 4 la personne que Amélie a embrassé a vu Camille
+s
+|___np
+|   |___np6
+|       |___defSngFemDet
+|       |   |___[la]
+|       |   
+|       |___n0SngFem
+|           |___n1SngFem
+|               |___SngFemLexN
+|               |   |___[personne]
+|               |   
+|               |___n2SngFem
+|                   |___objectRel
+|                       |___[que]
+|                       |   
+|                       |___np
+|                       |   |___properNoun
+|                       |       |___[Amélie]
+|                       |   
+|                       |___vTransitiveAvoir
+|                           |___avoirAux
+|                           |   |___[a]
+|                           |   
+|                           |___transitiveAvoirPastParticiple
+|                               |___[embrassé]
+|   
+|___vp
+    |___vTransitiveAvoir
+    |   |___avoirAux
+    |   |   |___[a]
+    |   |   
+    |   |___transitiveAvoirPastParticiple
+    |       |___[vu]
+    |   
+    |___np
+        |___properNoun
+            |___[Camille]
+YEP pos
+*************************************
+neg test 5 la personne que a embrassé Amélie a vu Camille
+YEP neg
+*************************************
+pos test 6 vous avez vu Bernard
+s
+|___np
+|   |___pronoun
+|       |___[vous]
+|   
+|___vp
+    |___vTransitiveAvoir
+    |   |___avoirAux
+    |   |   |___[avez]
+    |   |   
+    |   |___transitiveAvoirPastParticiple
+    |       |___[vu]
+    |   
+    |___np
+        |___properNoun
+            |___[Bernard]
+YEP pos
+*************************************
+pos test 7 un bon chien
+s
+|___np
+    |___np1
+        |___indefSngMascDet
+        |   |___[un]
+        |   
+        |___n0SngMasc
+            |___SngMascPrecedingAdj
+            |   |___[bon]
+            |   
+            |___n0SngMasc
+                |___n1SngMasc
+                    |___SngMascLexN
+                        |___[chien]
+YEP pos
+*************************************
+pos test 8 un bon beau chien
+s
+|___np
+    |___np1
+        |___indefSngMascDet
+        |   |___[un]
+        |   
+        |___n0SngMasc
+            |___SngMascPrecedingAdj
+            |   |___[bon]
+            |   
+            |___n0SngMasc
+                |___SngMascPrecedingAdj
+                |   |___[beau]
+                |   
+                |___n0SngMasc
+                    |___n1SngMasc
+                        |___SngMascLexN
+                            |___[chien]
+YEP pos
+*************************************
+pos test 9 un bon beau chien de la maison
+s
+|___np
+    |___np1
+        |___indefSngMascDet
+        |   |___[un]
+        |   
+        |___n0SngMasc
+            |___SngMascPrecedingAdj
+            |   |___[bon]
+            |   
+            |___n0SngMasc
+                |___SngMascPrecedingAdj
+                |   |___[beau]
+                |   
+                |___n0SngMasc
+                    |___n1SngMasc
+                        |___SngMascLexN
+                        |   |___[chien]
+                        |   
+                        |___pp
+                            |___defSngFemPartitive&Det
+                            |   |___[de]
+                            |   |   
+                            |   |___defSngFemDet
+                            |       |___[la]
+                            |   
+                            |___np14
+                                |___n0SngFem
+                                    |___n1SngFem
+                                        |___SngFemLexN
+                                            |___[maison]
+YEP pos
+*************************************
+pos test 10 un bon chien fantastique d'une belle jolie maison fantastique incroyable
+s
+|___np
+    |___np1
+        |___indefSngMascDet
+        |   |___[un]
+        |   
+        |___n0SngMasc
+            |___SngMascPrecedingAdj
+            |   |___[bon]
+            |   
+            |___n0SngMasc
+                |___n1SngMasc
+                    |___SngMascLexN
+                    |   |___[chien]
+                    |   
+                    |___n2SngMasc
+                        |___SngMascSucceedingAdj
+                        |   |___[fantastique]
+                        |   
+                        |___pp
+                            |___indefSngFemPartitive&Det
+                            |   |___[d'une]
+                            |   
+                            |___np10
+                                |___n0SngFem
+                                    |___SngFemPrecedingAdj
+                                    |   |___[belle]
+                                    |   
+                                    |___n0SngFem
+                                        |___SngFemPrecedingAdj
+                                        |   |___[jolie]
+                                        |   
+                                        |___n0SngFem
+                                            |___n1SngFem
+                                                |___SngFemLexN
+                                                |   |___[maison]
+                                                |   
+                                                |___n2SngFem
+                                                    |___SngFemSucceedingAdj
+                                                    |   |___[fantastique]
+                                                    |   
+                                                    |___n2SngFem
+                                                        |___SngFemSucceedingAdj
+                                                            |___[incroyable]
+YEP pos
+*************************************
+pos test 11 une jolie personne fantastique qui a vu Camille
+s
+|___np
+    |___np2
+        |___indefSngFemDet
+        |   |___[une]
+        |   
+        |___n0SngFem
+            |___SngFemPrecedingAdj
+            |   |___[jolie]
+            |   
+            |___n0SngFem
+                |___n1SngFem
+                    |___SngFemLexN
+                    |   |___[personne]
+                    |   
+                    |___n2SngFem
+                        |___SngFemSucceedingAdj
+                        |   |___[fantastique]
+                        |   
+                        |___n2SngFem
+                            |___subjectRel
+                                |___[qui]
+                                |   
+                                |___vp
+                                    |___vTransitiveAvoir
+                                    |   |___avoirAux
+                                    |   |   |___[a]
+                                    |   |   
+                                    |   |___transitiveAvoirPastParticiple
+                                    |       |___[vu]
+                                    |   
+                                    |___np
+                                        |___properNoun
+                                            |___[Camille]
+YEP pos
+*************************************
+pos test 12 la belle chienne que Camille a vu
+s
+|___np
+    |___np6
+        |___defSngFemDet
+        |   |___[la]
+        |   
+        |___n0SngFem
+            |___SngFemPrecedingAdj
+            |   |___[belle]
+            |   
+            |___n0SngFem
+                |___n1SngFem
+                    |___SngFemLexN
+                    |   |___[chienne]
+                    |   
+                    |___n2SngFem
+                        |___objectRel
+                            |___[que]
+                            |   
+                            |___np
+                            |   |___properNoun
+                            |       |___[Camille]
+                            |   
+                            |___vTransitiveAvoir
+                                |___avoirAux
+                                |   |___[a]
+                                |   
+                                |___transitiveAvoirPastParticiple
+                                    |___[vu]
+YEP pos
+*************************************
+pos test 13 la maison que Camille est sorti
+s
+|___np
+    |___np6
+        |___defSngFemDet
+        |   |___[la]
+        |   
+        |___n0SngFem
+            |___n1SngFem
+                |___SngFemLexN
+                |   |___[maison]
+                |   
+                |___n2SngFem
+                    |___objectRel
+                        |___[que]
+                        |   
+                        |___np
+                        |   |___properNoun
+                        |       |___[Camille]
+                        |   
+                        |___vTransitiveEtre
+                            |___etreAux
+                            |   |___[est]
+                            |   
+                            |___transitiveEtrePastParticiple
+                                |___[sorti]
+YEP pos
+*************************************
+pos test 14 le truc intéressant d'un grand bâtiment que Camille a volé
+s
+|___np
+    |___np5
+        |___defSngMascDet
+        |   |___[le]
+        |   
+        |___n0SngMasc
+            |___n1SngMasc
+                |___SngMascLexN
+                |   |___[truc]
+                |   
+                |___n2SngMasc
+                    |___SngMascSucceedingAdj
+                    |   |___[intéressant]
+                    |   
+                    |___pp
+                        |___indefSngMascPartitive&Det
+                        |   |___[d'un]
+                        |   
+                        |___np9
+                            |___n0SngMasc
+                                |___SngMascPrecedingAdj
+                                |   |___[grand]
+                                |   
+                                |___n0SngMasc
+                                    |___n1SngMasc
+                                        |___SngMascLexN
+                                        |   |___[bâtiment]
+                                        |   
+                                        |___n2SngMasc
+                                            |___objectRel
+                                                |___[que]
+                                                |   
+                                                |___np
+                                                |   |___properNoun
+                                                |       |___[Camille]
+                                                |   
+                                                |___vTransitiveAvoir
+                                                    |___avoirAux
+                                                    |   |___[a]
+                                                    |   
+                                                    |___transitiveAvoirPastParticiple
+                                                        |___[volé]
+YEP pos
+*************************************
+pos test 15 le chien que Camille a vu est descendu
+s
+|___np
+|   |___np5
+|       |___defSngMascDet
+|       |   |___[le]
+|       |   
+|       |___n0SngMasc
+|           |___n1SngMasc
+|               |___SngMascLexN
+|               |   |___[chien]
+|               |   
+|               |___n2SngMasc
+|                   |___objectRel
+|                       |___[que]
+|                       |   
+|                       |___np
+|                       |   |___properNoun
+|                       |       |___[Camille]
+|                       |   
+|                       |___vTransitiveAvoir
+|                           |___avoirAux
+|                           |   |___[a]
+|                           |   
+|                           |___transitiveAvoirPastParticiple
+|                               |___[vu]
+|   
+|___vp
+    |___vIntransitiveEtre
+        |___etreAux
+        |   |___[est]
+        |   
+        |___intransitiveEtrePastParticiple
+            |___[descendu]
+YEP pos
+*************************************
+pos test 16 le bon chien d'une belle jolie personne que Camille a vu est descendu
+s
+|___np
+|   |___np5
+|       |___defSngMascDet
+|       |   |___[le]
+|       |   
+|       |___n0SngMasc
+|           |___SngMascPrecedingAdj
+|           |   |___[bon]
+|           |   
+|           |___n0SngMasc
+|               |___n1SngMasc
+|                   |___SngMascLexN
+|                   |   |___[chien]
+|                   |   
+|                   |___pp
+|                       |___indefSngFemPartitive&Det
+|                       |   |___[d'une]
+|                       |   
+|                       |___np10
+|                           |___n0SngFem
+|                               |___SngFemPrecedingAdj
+|                               |   |___[belle]
+|                               |   
+|                               |___n0SngFem
+|                                   |___SngFemPrecedingAdj
+|                                   |   |___[jolie]
+|                                   |   
+|                                   |___n0SngFem
+|                                       |___n1SngFem
+|                                           |___SngFemLexN
+|                                           |   |___[personne]
+|                                           |   
+|                                           |___n2SngFem
+|                                               |___objectRel
+|                                                   |___[que]
+|                                                   |   
+|                                                   |___np
+|                                                   |   |___properNoun
+|                                                   |       |___[Camille]
+|                                                   |   
+|                                                   |___vTransitiveAvoir
+|                                                       |___avoirAux
+|                                                       |   |___[a]
+|                                                       |   
+|                                                       |___transitiveAvoirPastParticiple
+|                                                           |___[vu]
+|   
+|___vp
+    |___vIntransitiveEtre
+        |___etreAux
+        |   |___[est]
+        |   
+        |___intransitiveEtrePastParticiple
+            |___[descendu]
+YEP pos

@@ -1,0 +1,26 @@
+%noun phrase rules
+s --> np
+np --> pronoun
+np --> properNoun
+
+pronoun --> [je]
+pronoun --> [tu]
+pronoun --> [il]
+pronoun --> [elle]
+pronoun --> [on]
+pronoun --> [nous]
+pronoun --> [vous]
+pronoun --> [ils]
+pronoun --> [elles]
+
+properNoun --> AmÃ©lie
+properNoun --> Bernard
+properNoun --> Camille
+
+np --> det,n
+n --> [flight]
+n --> [morning]
+det --> [a]
+det --> [the]
+
+initial(s)

@@ -1,0 +1,247 @@
+s --> np,vp
+s --> np
+np --> pronoun
+np --> properNoun
+
+np --> np1
+np --> np2
+np --> np3
+np --> np4
+np --> np5
+np --> np6
+np --> np7
+np --> np8
+np --> np9
+np --> np10
+np --> np11
+np --> np12
+np --> np13
+np --> np14
+np --> np15
+np --> np16
+
+np1 --> indefSngMascDet,n0SngMasc
+np2 --> indefSngFemDet,n0SngFem
+np3 --> indefPlDet,n0PlMasc
+np4 --> indefPlDet,n0PlFem
+np5 --> defSngMascDet,n0SngMasc
+np6 --> defSngFemDet,n0SngFem
+np7 --> defPlDet,n0PlMasc
+np8 --> defPlDet,n0PlFem
+% (The above rules provide separate paths depending on the determiner's definiteness, plurality and gender)
+
+np9 --> n0SngMasc
+np10 --> n0SngFem
+np11 --> n0PlMasc
+np12 --> n0PlFem
+np13 --> n0SngMasc
+np14 --> n0SngFem
+np15 --> n0PlMasc
+np16 --> n0PlFem
+% (The above rules allow the omission of determiners)
+
+% SINGULAR MASCULINE PATH:
+n0SngMasc --> n1SngMasc
+n0SngMasc --> SngMascPrecedingAdj,n0SngMasc
+% (The above rule allows for the repetition of preceding adjectives with appropriate agreement)
+n1SngMasc --> SngMascLexN,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n1SngMasc --> SngMascLexN
+n1SngMasc --> SngMascLexN,n2SngMasc
+n2SngMasc --> SngMascSucceedingAdj,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n2SngMasc --> SngMascSucceedingAdj
+n2SngMasc --> SngMascSucceedingAdj,n2SngMasc
+% (The above rule allows for the repetition of succeeding adjectives with appropriate agreement)
+n2SngMasc --> subjectRel
+n2SngMasc --> objectRel
+% (The above rules provide a path for relative clauses)
+
+% SINGULAR FEMININE PATH:
+n0SngFem --> n1SngFem
+n0SngFem --> SngFemPrecedingAdj,n0SngFem
+% (The above rule allows for the repetition of preceding adjectives with appropriate agreement)
+n1SngFem --> SngFemLexN,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n1SngFem --> SngFemLexN
+n1SngFem --> SngFemLexN,n2SngFem
+n2SngFem --> SngFemSucceedingAdj,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n2SngFem --> SngFemSucceedingAdj
+n2SngFem --> SngFemSucceedingAdj,n2SngFem
+% (The above rule allows for the repetition of succeeding adjectives with appropriate agreement)
+n2SngFem --> subjectRel
+n2SngFem --> objectRel
+% (The above rules provide a path for relative clauses)
+
+% PLURAL MASCULINE PATH:
+n0PlMasc --> n1PlMasc
+n0PlMasc --> PlMascPrecedingAdj,n0PlMasc
+% (The above rule allows for the repetition of preceding adjectives with appropriate agreement)
+n1PlMasc --> PlMascLexN,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n1PlMasc --> PlMascLexN
+n1PlMasc --> PlMascLexN,n2PlMasc
+n2PlMasc --> PlMascSucceedingAdj,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n2PlMasc --> PlMascSucceedingAdj
+n2PlMasc --> PlMascSucceedingAdj,n2PlMasc
+% (The above rule allows for the repetition of succeeding adjectives with appropriate agreement)
+n2PlMasc --> subjectRel
+n2PlMasc --> objectRel
+% (The above rules provide a path for relative clauses)
+
+% PLURAL FEMININE PATH:
+n0PlFem --> n1PlFem
+n0PlFem --> PlFemPrecedingAdj,n0PlFem
+% (The above rule allows for the repetition of preceding adjectives with appropriate agreement)
+n1PlFem --> PlFemLexN,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n1PlFem --> PlFemLexN
+n1PlFem --> PlFemLexN,n2PlFem
+n2PlFem --> PlFemSucceedingAdj,pp
+% (The above rule allows for the addition of the partitive article in order to extend the np)
+n2PlFem --> PlFemSucceedingAdj
+n2PlFem --> PlFemSucceedingAdj,n2PlFem
+% (The above rule allows for the repetition of succeeding adjectives with appropriate agreement)
+n2PlFem --> subjectRel
+n2PlFem --> objectRel
+% (The above rules provide a path for relative clauses)
+
+
+pp --> indefSngMascPartitive&Det,np9
+pp --> indefSngFemPartitive&Det,np10
+pp --> indefPlPartitive&Det,np11
+pp --> indefPlPartitive&Det,np12
+pp --> defSngMascPartitive&Det,np13
+pp --> defSngFemPartitive&Det,np14
+pp --> defPlPartitive&Det,np15
+pp --> defPlPartitive&Det,np16
+% (The above rules allow for the addition of a partitive article and determiner and provide separate paths depending on definiteness, plurality and gender. They also refer back to nps with determiners omitted to avoid repetition)
+
+subjectRel --> [qui],vp
+objectRel --> [que],np,vTransitiveAvoir
+objectRel --> [que],np,vTransitiveEtre
+% (The above rules add the appropriate rel and provide a corresponding path)
+
+% DETERMINERS:
+indefSngMascDet --> [un]
+indefSngFemDet --> [une]
+indefPlDet --> [des]
+defSngMascDet --> [le]
+defSngFemDet --> [la]
+defPlDet --> [les]
+
+% PARTITIVE & DETERMINER:
+indefSngMascPartitive&Det --> [d'un]
+indefSngFemPartitive&Det --> [d'une]
+indefPlPartitive&Det --> [des]
+defSngMascPartitive&Det --> [du]
+defSngFemPartitive&Det --> [de],defSngFemDet
+defPlPartitive&Det --> [de],defPlDet
+
+% PRONOUNS:
+pronoun --> [je]
+pronoun --> [tu]
+pronoun --> [il]
+pronoun --> [elle]
+pronoun --> [on]
+pronoun --> [nous]
+pronoun --> [vous]
+pronoun --> [ils]
+pronoun --> [elles]
+
+% PROPER NOUNS
+properNoun --> [Amélie]
+properNoun --> [Bernard]
+properNoun --> [Camille]
+% (These could be extended to increase the potential amount of vocabulary accepted)
+
+% PRECEDING ADJECTIVES:
+SngMascPrecedingAdj --> [bon]
+SngMascPrecedingAdj --> [beau]
+SngMascPrecedingAdj --> [joli]
+SngMascPrecedingAdj --> [grand]
+SngFemPrecedingAdj --> [bonne]
+SngFemPrecedingAdj --> [belle]
+SngFemPrecedingAdj --> [jolie]
+SngFemPrecedingAdj --> [grande]
+PlMascPrecedingAdj --> [bons]
+PlMascPrecedingAdj --> [beaux]
+PlMascPrecedingAdj --> [jolis]
+PlMascPrecedingAdj --> [grands]
+PlFemPrecedingAdj --> [bonnes]
+PlFemPrecedingAdj --> [belles]
+PlFemPrecedingAdj --> [jolies]
+PlFemPrecedingAdj --> [grandes]
+PlFemPrecedingAdj --> [trois]
+% (These could be extended to increase the potential amount of vocabulary accepted)
+
+% SUCCEEDING ADJECTIVES:
+SngMascSucceedingAdj --> [fantastique]
+SngMascSucceedingAdj --> [incroyable]
+SngMascSucceedingAdj --> [intéressant]
+SngFemSucceedingAdj --> [fantastique]
+SngFemSucceedingAdj --> [incroyable]
+SngFemSucceedingAdj --> [intéressante]
+PlMascSucceedingAdj --> [fantastiques]
+PlMascSucceedingAdj --> [incroyables]
+PlMascSucceedingAdj --> [intéressants]
+PlFemSucceedingAdj --> [fantastiques]
+PlFemSucceedingAdj --> [incroyables]
+PlFemSucceedingAdj --> [intéressantes]
+% (These could be extended to increase the potential amount of vocabulary accepted)
+
+% LEXICAL NOUNS:
+SngMascLexN --> [chien]
+SngMascLexN --> [truc]
+SngMascLexN --> [bâtiment]
+SngFemLexN --> [chienne]
+SngFemLexN --> [personne]
+SngFemLexN --> [maison]
+PlMascLexN --> [chiens]
+PlMascLexN --> [trucs]
+PlMascLexN --> [bâtiments]
+PlFemLexN --> [chiennes]
+PlFemLexN --> [personnes]
+PlFemLexN --> [maisons]
+% (These could be extended to increase the potential amount of vocabulary accepted)
+
+vp --> vTransitiveAvoir,np
+vp --> vTransitiveEtre,np
+% (The above rules provide separate paths for transitive verbs depending on whether the verb uses avoir or etre as an auxiliary)
+vp --> vIntransitiveAvoir
+vp --> vIntransitiveEtre
+% (The above rules provide separate paths for intransitive verbs depending on whether the verb uses avoir or etre as an auxiliary)
+vTransitiveAvoir --> avoirAux,transitiveAvoirPastParticiple
+vTransitiveEtre --> etreAux,transitiveEtrePastParticiple
+vIntransitiveAvoir --> avoirAux,intransitiveAvoirPastParticiple
+vIntransitiveEtre --> etreAux,intransitiveEtrePastParticiple
+% (The above rules allow for the addition of a past participle and appropriate corresponding auxiliary. Of course, this only allows for a basic implementation of the 'passe compose' and these rules could be extended to allow for other tenses and moods)
+
+% AVOIR AUXILIARIES:
+avoirAux --> [ai]
+avoirAux --> [as]
+avoirAux --> [a]
+avoirAux --> [avons]
+avoirAux --> [avez]
+avoirAux --> [ont]
+
+% ETRE AUXILIARIES:
+etreAux --> [suis]
+etreAux --> [es]
+etreAux --> [est]
+etreAux --> [sommes]
+etreAux --> [êtes]
+etreAux --> [sont]
+
+% PAST PARTICIPLES:
+transitiveAvoirPastParticiple --> [embrassé]
+transitiveAvoirPastParticiple --> [vu]
+transitiveAvoirPastParticiple --> [volé]
+transitiveEtrePastParticiple --> [sorti]
+intransitiveAvoirPastParticiple --> [mangé]
+intransitiveEtrePastParticiple --> [descendu]
+% (These could be extended to increase the potential amount of vocabulary accepted)
+
+initial(s)

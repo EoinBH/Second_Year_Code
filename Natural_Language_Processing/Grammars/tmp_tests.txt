@@ -1,0 +1,39 @@
+Amélie a embrassé Bernard
+% (Amélie kissed Bernard)
+
+trois personnes ont embrassé Bernard
+% (three people kissed Bernard)
+
+la personne qui a embrassé Bernard a vu Camille
+% (the person who kissed Bernard saw Camille)
+
+*la personne qui a Bernard embrassé a vu Camille
+% (wrong word order for subject rel)
+
+la personne que Amélie a embrassé a vu Camille
+% (the person who Amélie kissed saw Camille)
+
+*la personne que a embrassé Amélie a vu Camille
+% (wrong word order for object rel)
+
+vous avez vu Bernard
+
+un bon chien
+
+un bon beau chien
+
+un bon beau chien de la maison
+
+un bon chien fantastique d'une belle jolie maison fantastique incroyable
+
+une jolie personne fantastique qui a vu Camille
+
+la belle chienne que Camille a vu
+
+la maison que Camille est sorti
+
+le truc intéressant d'un grand bâtiment que Camille a volé
+
+le chien que Camille a vu est descendu
+
+le bon chien d'une belle jolie personne que Camille a vu est descendu
